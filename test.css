@@ -1,0 +1,171 @@
+h1,h2,h3,h4{
+  propriete: valeur;
+  color: #4b6344;
+  propriete: valeur;
+  font-size: 48px;
+}
+
+
+
+gras-rouge{
+  color:red;
+  font-weight: bold;
+}
+
+nav>ul{
+  background-color:rgba(51,111,108,0.5);
+  text-align: center;
+  position: relative;
+  left:-8px;
+  width:calc(100% + 16px);
+  top:0px
+}
+
+nav>ul>li{
+  display:inline-block;
+}
+nav a{
+  position:relative;
+  text-decoration: none;
+  color:#000;
+  margin-right: 11px
+
+
+}
+nav a:hover{
+  color: #123;
+
+}
+nav a:active{
+  color:red;
+}
+footer{
+  position:relative;
+  bottom:0px;
+  left: 0px;
+  background-color:rgba(51,111,108,0.5);
+  width:100%;
+  height: 20px
+  font-weight:bolder;
+
+}
+input[type="text"], input[type="number"], select{
+  position:absolute;
+  left: 200px;
+}
+input,label {
+  height:10px;
+}
+input[type="submit"]{
+  height:60px;
+  width:100px;
+  border-radius: 5px;
+  border:none;
+
+  background-color: #F8976A;
+  color: #FEFEFE;
+}
+
+input[type="text"], input[type="number"] {
+  width:150px;
+}
+
+textarea {
+  width:200px;
+  height:100px
+}
+
+input[type="submit"]:hover{
+  box-shadow: 3px 3px 5px #444;
+  background-color: #FFC3C3;
+}
+
+nav a::before{
+  position: absolute;
+  left:-10px;
+  top:4px;
+  border-radius:50%;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #EEB906;
+  transform: scale(0);
+  transition-property: transform: scale;
+  transition-duration: 1s ;
+  transition-timing-function: ease;
+}
+
+nav a:hover:before {
+  transform:scale(1);
+}
+
+header img{
+  width:130px;
+  height:97px;
+  border-color: red;
+  border-width: 20px;
+
+  border-radius: 5px;
+}
+
+header {
+  height: 100px;
+}
+
+.accueil{
+  background-image:url(OSS_117_Le_Caire_nid_d_espions.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+.input input+label, .select select+label{
+  transition: all 1s ease;
+}
+
+.input input:focus+label, .select select:focus+label{
+  display: inline-block;
+  animation: monanimation 2s;
+  animation-iteration-count: infinite;
+  color: red;
+}
+
+@keyframes monanimation {
+  0%{transform: translateX(0px);}
+  25%{transform: translateX(50px);}
+  50%{transform: translateX(0px);}
+  75%{transform: translateX(25px);}
+  100%{transform: translateX(0px);}
+
+}
+.contact{
+  background-image: url(XVM9433eb42-5073-11e5-9e57-b1bee94af3f8.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-origin: border-box;
+  background-size: cover;
+  background-position:center;
+
+}
+
+#i1, #i2, #i3, #i4 {
+  border-radius: 20%;
+  border-style: solid;
+  transition: all 1s ease;
+}
+
+#i1:hover, #i2:hover, #i3:hover, #i4:hover {
+  border-color: red;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  h1,h2,h3,h4,h5,h6{
+    font-size: 20px;
+  }
+  h1{
+    color:red;
+  }
+  nav{
+    visibility: hidden;
+  }
+}
